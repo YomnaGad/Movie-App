@@ -1,0 +1,132 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout
+
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.moviesapp.DetailActivity.DetailFragment">
+        <ImageView
+            android:id="@+id/path_back"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+
+            android:src="@drawable/placeholder" />
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginTop="5dp"
+              android:layout_marginLeft="20dp">
+                  <Button
+                      android:layout_width="105dp"
+                      android:layout_height="60dp"
+                      android:layout_marginTop="20dp"
+                      android:background="@color/colorAccent"
+                      android:text="Mark as favorite"
+                      android:id="@+id/favorite"
+
+                      />
+                  <TextView
+                      android:id="@+id/release_date"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+
+                      android:layout_below="@+id/favorite"
+
+                      android:padding="1dp"
+                      android:text="dafdafda"
+                      android:textColor="#222"
+                      android:textSize="15dp" />
+                  <TextView
+                      android:id="@+id/average_rate"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+
+                      android:layout_below="@+id/release_date"
+
+                      android:padding="1dp"
+                      android:text="dafdafda"
+                      android:textColor="#222"
+                      android:textSize="15dp" />
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+
+            android:padding="1dp"
+            android:text="dafdafda"
+            android:textColor="#222"
+            android:textSize="15dp" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000" />
+             <TextView
+                    android:id="@+id/trailers"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+
+
+                    android:text="Trailers:"
+                    android:textColor="#222"
+                    android:textSize="20dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_trailer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/average_rate"
+             />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_review"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycler_view_trailer"
+             />
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+</ScrollView>
